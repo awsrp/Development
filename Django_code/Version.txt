@@ -1,0 +1,37 @@
+Django-3.2.9
+Django-3.12.
+Bcrypt
+posstgressql-13x
+python-3.10
+
+
+11/21/2021  08:18 PM    <DIR>          asgiref
+11/21/2021  08:18 PM    <DIR>          asgiref-3.4.1.dist-info
+11/22/2021  11:57 PM    <DIR>          bcrypt
+11/22/2021  11:57 PM    <DIR>          bcrypt-3.2.0.dist-info
+11/22/2021  11:57 PM    <DIR>          cffi
+11/22/2021  11:57 PM    <DIR>          cffi-1.15.0.dist-info
+11/21/2021  08:26 PM    <DIR>          corsheaders
+11/21/2021  08:18 PM    <DIR>          django
+11/21/2021  08:18 PM    <DIR>          Django-3.2.9.dist-info
+11/21/2021  08:22 PM    <DIR>          djangorestframework-3.12.4.dist-info
+11/21/2021  08:26 PM    <DIR>          django_cors_headers-3.10.0.dist-info
+11/21/2021  08:06 PM               126 easy_install.py
+11/21/2021  08:20 PM    <DIR>          pip
+11/21/2021  08:20 PM    <DIR>          pip-21.3.1.dist-info
+11/21/2021  08:06 PM    <DIR>          pkg_resources
+11/21/2021  08:39 PM    <DIR>          psycopg2
+11/21/2021  08:39 PM    <DIR>          psycopg2-2.9.2.dist-info
+11/22/2021  11:57 PM    <DIR>          pycparser
+11/22/2021  11:57 PM    <DIR>          pycparser-2.21.dist-info
+11/21/2021  08:18 PM    <DIR>          pytz
+11/21/2021  08:18 PM    <DIR>          pytz-2021.3.dist-info
+11/21/2021  08:22 PM    <DIR>          rest_framework
+11/21/2021  08:06 PM    <DIR>          setuptools
+11/21/2021  08:06 PM    <DIR>          setuptools-49.2.1.dist-info
+11/22/2021  11:57 PM    <DIR>          six-1.16.0.dist-info
+11/22/2021  11:57 PM            34,549 six.py
+11/21/2021  08:18 PM    <DIR>          sqlparse
+11/21/2021  08:18 PM    <DIR>          sqlparse-0.4.2.dist-info
+11/22/2021  11:57 PM           182,784 _cffi_backend.cp38-win_amd64.pyd
+11/22/2021  11:57 PM    <DIR>          __pycache__
