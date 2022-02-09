@@ -1,0 +1,320 @@
+.headingarea {
+    height: 120px;
+}
+
+.topnavigation {
+    margin-top: 1px;
+    height: 80px;
+    color: #333333;
+}
+
+.logged_in_message {
+    float: right;
+    width: 60%;
+    font-size: 0.8em;
+    text-align: right;
+    height: 25px;
+}
+
+.company_name {
+    float: right;
+    text-align: right;
+    clear: both;
+    font-weight: bold;
+    color: #014883;
+    font-size: 25px;
+}
+
+.company_logo {
+    display: block;
+}
+
+#company_logo img {
+    padding-top: 0px;
+}
+img {
+    margin-left: 5px;
+}
+
+.menu {
+    line-height: 33px;
+    float: left;
+    width: 100%;
+    background-color: #FAFAFA;
+    height: 33px;
+    border: 1px solid #CCCCCC;
+    -webkit-box-shadow: 0 6px 10px -6px #888888;
+    -moz-box-shadow: 0 6px 10px -6px #888888;
+    box-shadow: 0 6px 10px -6px #888888;
+}
+
+.menu, .menu, .submenu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    height: 33px;
+    font-size: 14px;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.menu a.active_top_menu {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    padding: 0px 10px 0px 10px;
+    background-color: #014883 !important;
+    color: #FFFFFF !important;
+    line-height: 33px;
+    -webkit-box-shadow: inset 0px 0px 0px 1px #ffffff;
+    -moz-box-shadow: inset 0px 0px 0px 1px #FFFFFF;
+    box-shadow: inset 0px 0px 0px 1px #ffffff;
+}
+
+.menu a:link, .menu a:active, .menu a:visited {
+    display: block;
+    position: relative;
+    color: #545c60;
+    text-decoration: none;
+    padding: 0px 10px 0px 10px;
+}
+
+a:link, a:active, a:visited {
+    color: #333;
+    text-decoration: none;
+}
+
+
+
+.footer {
+    padding-top: 15px;
+    border-top: solid 1px #CCC;
+    margin-left: auto;
+    margin-right: auto;
+    width: 99%;
+    margin-top: 50px;
+    height: 25px;
+}
+
+.footer_left {
+    float: left;
+    width: 300px;
+}
+
+.footer_right {
+    float: right;
+    text-align: right;
+    width: 380px;
+}
+
+.container_8 .grid_6 {
+    width: 75%;
+    position: static;
+    text-align: justify;
+}
+
+.alpha {
+    margin-left: 0;
+}
+
+.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .leftcol1, .grid_8 {
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: 8px;
+    margin-right: 7px;
+}
+
+.container_8 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    min-height: 500px;
+    _height: 500px;
+}
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.container_8 .grid_6 {
+    width: 75%;
+    position: static;
+    text-align: justify;
+}
+
+h1 {
+    font-size: 22px;
+    color: #014883;
+    font-weight: bold;
+}
+
+h2 {
+    margin: 5px 0px 10px 0px;
+    font-size: 19px;
+    color: #014883;
+}
+
+p, dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset {
+    margin-bottom: 0px;
+    float: left;
+    width: 100%;
+}
+
+.container_8 .grid_2 {
+    width: 22%;
+}
+.omega {
+    margin-right: 0;
+    float: initial;
+}
+
+.giveitroom {
+    padding: 1px;
+    background-color: #efefef;
+}
+.greybox {
+    background-color: #efefef;
+    margin-bottom: 5px;
+    overflow: auto;
+}
+
+#login_container h3 {
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: #014883;
+    padding: 2px 0px 2px 5px;
+    width: 98%;
+}
+
+.giveitroom h3 {
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: #014883;
+    padding: 2px 0px 2px 5px;
+    width: 98%;
+}
+
+#login_dialog {
+    width: 98%;
+}
+
+input, select {
+    border: 1px solid #CCCCCC;
+    color: #29ABE2;
+    height: 22px;
+    margin-bottom: 2px;
+    padding: 2px;
+    background: #fff;
+}
+
+input {
+    font-size: 11px;
+    padding: 1px 2px;
+    color: #ffffff;
+    margin-top: 5px;
+    color: #000;
+}
+
+input[type="hidden" i] {
+    appearance: none;
+    background-color: initial;
+    cursor: default;
+    display: none !important;
+    padding: initial;
+    border: initial;
+}
+
+#login_dialog .login_dlg_tbl {
+    margin: 5px;
+}
+.login_dlg_tbl {
+    margin: 0px;
+    padding: 0px;
+}
+
+.page_message {
+    float: none;
+    width: auto;
+    font-size: 1.8em;
+    align-items: center;
+}
+
+.formrowtable {
+    float: left;
+    width: 100%;
+}
+
+.conteentDiv .empDetailsTable {
+    font-size: 15px;
+}
+.noborderall {
+    border: 0px;
+}
+.empDetailsTable {
+    border: 1px solid #CCCCCC;
+    width: 100%;
+    float: left;
+    margin: 6px 0px 0px 0px;
+    padding-bottom: 10px;
+}
+
+.formrowtable .formrow {
+    border-bottom: 1px solid #CCCCCC;
+    float: left;
+    width: 100%;
+    padding: 5px 0px;
+}
+.empDetailsTable .formrowtable .formrow .label, .formrowtable .formrow .label {
+    float: left;
+    width: 30%;
+    border: 0px;
+}
+.empDetailsTable .formrow .text, .formrowtable .formrow .text {
+    float: left;
+    width: 67%;
+    border: 0px;
+}
+.btns_div {
+    float: none;
+    margin: 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+.save, .save:link, .save:active, .save:visited {
+    width: 80px;
+    height: 35px;
+    font-size: 15px;
+    background-color:midnightblue;
+    color:white;
+   
+}
+
+.cancel, .cancel:link, .cancel:active, .cancel:visited {
+    width: 80px;
+    height: 35px;
+    font-size: 15px;
+    background-color:midnightblue;
+    color:white;
+}
+
+.textBox {
+    width: 300px;
+    height: 30px;
+}
