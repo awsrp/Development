@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'corsheaders',# do this
 ]
 
 REST_FRAMEWORK = {
@@ -56,6 +57,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+
 ]
 
 ROOT_URLCONF = 'Awsreadiness.urls'
@@ -87,9 +90,11 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'AWS',
         'USER': 'postgres',
-        'PASSWORD': 'root',
-        'HOST': 'postgres-sql'
-        'PORT': '5432' 
+        #'PASSWORD': 'root',
+        'PASSWORD': 'admin',
+        #'HOST': 'postgres-sql',
+        'HOST': 'localhost'
+        #'PORT': '5432' 
     }
 }
 
@@ -129,6 +134,7 @@ USE_L10N = True
 
 USE_TZ = True
 
+CORS_ORIGIN_ALLOW_ALL = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/

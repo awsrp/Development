@@ -15,19 +15,20 @@ import bcrypt
 @api_view(['POST', ])
 def signup(request):
     if request.method == 'POST':
+        print("###INSIDE POST SIGNUP######")
         data_received = request.data
         user_Pwd = bytes(data_received['password'], 'utf-8')
         hashed = bcrypt.hashpw(user_Pwd, bcrypt.gensalt())
 
         user_data = {
-            'EmpId' : data_received['emp_id'],
-            'FirstName' : data_received['FirstName'].title(),
-            'LastName' : data_received['LastName'].title(),
+            'EmpId' : data_received['empid'],
+            'FirstName' : data_received['fname'].title(),
+            'LastName' : data_received['lname'].title(),
             # 'DOB' : data_received['DOB'],
-            'Team' : data_received['Team'],
-            'Username' : data_received['Username'],
+            'Team' : data_received['team'],
+            'Username' : data_received['username'],
             'Password' : hashed.decode('utf-8'),
-            'Email' : data_received['email']
+            'Email' : data_received['emailid']
         }
         user_serializer = DirectorySerializer(data=user_data)
         if user_serializer.is_valid():
