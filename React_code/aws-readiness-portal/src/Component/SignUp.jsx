@@ -52,15 +52,27 @@ const SignUp = () =>{
         setsavemsg("Please enter all mandatory fields");
         return false;
 
-      }      
+      } else{
+        setempDetails({
+          fname: event.target.form[0].value,
+          lname: event.target.form[1].value,
+          empid: event.target.form[2].value,
+          emailid: event.target.form[3].value,
+          username: event.target.form[4].value,
+          password: event.target.form[5].value,
+          team:event.target.form[6].value,
+        });
+      }
       console.log("user data :", empDetails);
      const response =  axios.post(
-         "http://blogservice.herokuapp.com/api/login",
+         "http://127.0.0.1:8000/user/signup",
          empDetails
-       );
-       console.log(response);
+       ).then(resp=>{
+        setempDetails(resp);
+       }).catch(error => {
+        console.log(error);
+      });
       setsavemsg("Record Saved Successfully");
-      console.log(event.target.form[0].value);
       btnReset();
     }
 
