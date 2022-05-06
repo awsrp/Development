@@ -33,14 +33,14 @@ def signup(request):
         user_serializer = DirectorySerializer(data=user_data)
         if user_serializer.is_valid():
             user_serializer.save()
-            return JsonResponse("Added Successfully!!", safe=False)
+            return JsonResponse("{Added Successfully}", safe=False)
         return JsonResponse("Failed to Add.", safe=False)
 
 @api_view(['POST', ])
 def login_validation(request):
     print(request)
     if request.method == 'POST':
-        username = request.data["Username"]
+        username = request.data["username"]
         user_password = request.data['password'].encode('utf-8')
         try:
             user = Directory.objects.get(Username=username)

@@ -34,14 +34,26 @@ const[empLogin, setempLogin] = useState({
     event.preventDefault();
     console.log(event.target.value);
     console.log("user data :", empLogin);
+    setempLogin({
+      username:event.target.form[0].value,
+      password:event.target.form[0].value,
+    });
+    console.log("login data :", empLogin);
      const response = axios.post(
          "http://localhost:8000/user/loginValidation",
          empLogin
-       );
+       ).then( resp =>{
+        console.log("INSIDE THEN" + JSON.stringify(resp));
+        if(!resp.data.includes("Valid")){
+          setsavemsg(resp.data)
+        } else{
+          history.push('/dashboard');
+        }
+       }).catch(error=>{
+        setsavemsg("Invalid login")
+       });
        console.log(response);    
-      
-
-    history.push('/dashboard');
+   // history.push('/dashboard');
   }
 
 
