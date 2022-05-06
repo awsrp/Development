@@ -35,7 +35,7 @@ const[empLogin, setempLogin] = useState({
     console.log(event.target.value);
     console.log("user data :", empLogin);
      const response = axios.post(
-         "http://127.0.0.1:8000/user/loginValidation",
+         "http://localhost:8000/user/loginValidation",
          empLogin
        );
        console.log(response);    
