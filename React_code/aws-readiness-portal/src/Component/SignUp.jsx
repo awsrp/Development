@@ -65,7 +65,7 @@ const SignUp = () =>{
       }
       console.log("user data :", empDetails);
      const response =  axios.post(
-         "http://localhost:8000/user/signup",
+         "http://localhost:32000/user/signup",
          empDetails
        ).then(resp=>{
         setempDetails(resp);

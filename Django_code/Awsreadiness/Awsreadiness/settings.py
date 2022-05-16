@@ -60,6 +60,10 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 
 ]
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:3000',
+]
+
 
 ROOT_URLCONF = 'Awsreadiness.urls'
 
